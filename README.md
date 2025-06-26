@@ -33,3 +33,18 @@ The rest of the objects representing the books have been filled in for you. You 
 Now, you should start working on getting several common parts of the books.
 
 Start by displaying all the books. Create a displayBooks function with a parameter accepting an array with book objects. The function should return a string that contains the title, author, and pages of all the books in the array passed to function.
+
+Step 5
+To display the book summaries, you can use the about property of each book.
+
+Create a getBookSummaries function with a single parameter, accepting an array with book objects. The getBookSummaries function should return an array containing all the about property value of each book.
+
+Step 6
+Another useful thing to do is to get the books by their author.
+
+Create a getBooksByAuthor function with two parameters - an array with book objects and a string with the author.
+
+The function must return an array that contains the books by a particular author.
+
+Step 7
+Finally, create a getTotalPages function with a single parameter, accepting an array with book objects. The function should return the total number of pages in the books from the array passed to the function.
