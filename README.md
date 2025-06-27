@@ -48,3 +48,12 @@ The function must return an array that contains the books by a particular author
 
 Step 7
 Finally, create a getTotalPages function with a single parameter, accepting an array with book objects. The function should return the total number of pages in the books from the array passed to the function.
+
+Step 8
+Now, you should test out the functions by calling them with the appropriate arguments.
+
+Create four new variables: libraryBooks, bookSummaries, booksByArvidKahl, and totalPagesOfBooksInLibrary. Set them all to the calling of displayBooks(), getBookSummaries(), getBooksByAuthor(), and getTotalPages() respectively with the appropriate parameters.
+
+Log all the variables to the console.
+
+With that, your library manager workshop is complete.
