@@ -28,23 +28,31 @@ about	"A practical book about discarding bad habits and building good ones"
 pages	320
 
 Step 4
-The rest of the objects representing the books have been filled in for you. You can take a look at them.
+The rest of the objects representing the books have been filled in for you.
 
-Now, you should start working on getting several common parts of the books.
+Now would be a good time to start working on displaying the book information in the console. Over the next few steps, you will learn how to work with the map() method to achieve this goal.
 
-Start by displaying all the books. Create a displayBooks function with a parameter accepting an array with book objects. The function should return a string that contains the title, author, and pages of all the books in the array passed to function.
+Begin by logging the message "Books in the Library:\n" to the console. The newline character is added here because there should be a space between this message and the list of books.
 
 Step 5
-To display the book summaries, you can use the about property of each book.
-
-Create a getBookSummaries function with a single parameter, accepting an array with book objects. The getBookSummaries function should return an array containing all the about property value of each book.
+Next, create a function called getBookInformation with one parameter. This parameter will represent the array of books when the function is called. You can name this parameter whatever you like.
 
 Step 6
-Another useful thing to do is to get the books by their author.
+In prior lectures, you learned about the map() method which creates a new array by applying a given function to each element of the original array.
 
-Create a getBooksByAuthor function with two parameters - an array with book objects and a string with the author.
+Here is an example:
 
-The function must return an array that contains the books by a particular author.
+Example Code
+const developers = [
+  { name: "Alice", city: "New York", title: "Frontend Developer" },
+  { name: "Bob", city: "San Francisco", title: "Backend Developer" }
+];
+
+console.log(developers.map(dev => dev.name));
+// ["Alice", "Bob"]
+dev in this example represents each object in the developers array. Then, dot notation is used to get the name from the object. Lastly, the result will be a new array of names.
+
+Inside the getBookInformation function, use the map() method on the catalog parameter to return a new array of just book titles. Refer to the example if you need help.
 
 Step 7
 Finally, create a getTotalPages function with a single parameter, accepting an array with book objects. The function should return the total number of pages in the books from the array passed to the function.
