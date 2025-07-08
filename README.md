@@ -55,7 +55,11 @@ dev in this example represents each object in the developers array. Then, dot no
 Inside the getBookInformation function, use the map() method on the catalog parameter to return a new array of just book titles. Refer to the example if you need help.
 
 Step 7
-Finally, create a getTotalPages function with a single parameter, accepting an array with book objects. The function should return the total number of pages in the books from the array passed to the function.
+Now it is time to see what the result will look like in the console.
+
+Below your getBookInformation function, add a console.log() and pass in a getBookInformation() function call with library for the argument.
+
+When done correctly, you should see an array of book titles in the console.
 
 Step 8
 Now, you should test out the functions by calling them with the appropriate arguments.
