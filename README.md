@@ -169,7 +169,7 @@ For the last part of the workshop, you will learn how to get the total number of
 
 Start by logging to the message "\nTotal number of pages for all library books:\n" to the console.
 
-Step 18 Passed
+Step 18
 For the last step of the workshop, you will review how to work with the reduce() method. This method is used to process an array and condense it into a single value.
 
 Here is an example:
