@@ -98,3 +98,91 @@ Step 10
 For the next part of the workshop, you will focus on displaying a list of book summaries to the console.
 
 Begin by logging the message "\nList of book summaries:\n" to the console. The newline character is added here because there should be a space before and after the message here.
+
+Step 11
+To get a list of book summaries, you can use the about property of each book.
+
+Create a getBookSummaries function with a single parameter, accepting an array with book objects. You can name the parameter whatever you like.
+
+The getBookSummaries function should return an array of strings representing the summary for each book.
+
+Step 12
+Just like in a prior step, the desired result would look nicer as a string instead of an array.
+
+Chain the join() method to your existing map() method and pass in "\n" for the separator to the join().
+
+Then, below your getBookSummaries function, add a console.log(). The console statement should call the getBookSummaries function with library for the argument.
+
+Now, you should see a string for the result in the console.
+
+Step 13
+For this next part of the workshop, you are going to learn how to display a list of books by author.
+
+Begin by logging the message "\nList of books by Arvid Kahl:\n" to the console.
+
+Step 14
+In earlier lectures, you learned how to work with the filter() method which is used to return a new array of filtered results.
+
+Here is an example:
+
+Example Code
+const developers = [
+  { name: "Alice", city: "New York", age: 30 },
+  { name: "Bob", city: "San Francisco", age: 25 },
+  { name: "Charlie", city: "New York", age: 35 },
+  { name: "Diana", city: "Chicago", age: 28 }
+];
+
+const newYorkCityDevelopers = developers.filter(dev => dev.city === "New York");
+
+console.log(newYorkCityDevelopers);
+/*
+[
+  { name: "Alice", city: "New York", age: 30 },
+  { name: "Charlie", city: "New York", age: 35 }
+]
+*/
+Create a getBooksByAuthor function with two parameters - an array with book objects and a string with the author.
+
+The function must return an array that contains the books by a particular author.
+
+Step 15
+Now, it is time to test out your function.
+
+Add a console.log() below your getBooksByAuthor() function.
+
+Inside the console.log(), call the getBooksByAuthor() function with library and "Arvid Kahl" for arguments.
+
+Now, you should see all of the books for that particular author in the console.
+
+Step 16
+It would be nice to test our your getBooksByAuthor function with another author.
+
+Begin by logging the message "\nList of books by James Clear:\n" to the console.
+
+Below that console.log(), add another console.log(). Inside that console.log(), call the getBooksByAuthor() function with library and "James Clear" for arguments.
+
+Now, you should see all of the books for that particular author in the console.
+
+Step 17
+For the last part of the workshop, you will learn how to get the total number of pages for all of the books in the library.
+
+Start by logging to the message "\nTotal number of pages for all library books:\n" to the console.
+
+Step 18 Passed
+For the last step of the workshop, you will review how to work with the reduce() method. This method is used to process an array and condense it into a single value.
+
+Here is an example:
+
+Example Code
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+
+console.log(sum); // 15
+In the following example, the reducer function takes acc (which starts at 0, as specified by the second argument to reduce) and adds each number to it. This will return a sum of 15.
+
+Create a getTotalPages function with a single parameter, accepting an array with book objects. The function should return the total number of pages in the books from the array passed to the function.
+
+Lastly, add a console.log(getTotalPages(library)) below your getTotalPages function to see the result.
+
+With that, your library manager workshop is complete!
