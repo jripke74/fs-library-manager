@@ -62,10 +62,39 @@ Below your getBookInformation function, add a console.log() and pass in a getBoo
 When done correctly, you should see an array of book titles in the console.
 
 Step 8
-Now, you should test out the functions by calling them with the appropriate arguments.
+The array of book titles is nice, but it would be nice to display the title and author for each book like this:
 
-Create four new variables: libraryBooks, bookSummaries, booksByArvidKahl, and totalPagesOfBooksInLibrary. Set them all to the calling of displayBooks(), getBookSummaries(), getBooksByAuthor(), and getTotalPages() respectively with the appropriate parameters.
+Example Code
+[ 
+  "Your Next Five Moves: Master the Art of Business Strategy by Patrick Bet-David and Greg Dinkin",
+  "Atomic Habits by James Clear",
+  "Choose Your Enemies Wisely: Business Planning for the Audacious Few by Patrick Bet-David",
+  ...
+]
+Update your use of the map() method to instead return an array of strings in this format: TITLE by AUTHOR.
 
-Log all the variables to the console.
+You will need to use either template literals or string concatenation with the + operator to achieve this result.
 
-With that, your library manager workshop is complete.
+Step 9
+While the array of results is working, the final desired result should be a string listing all of the books with a title and author.
+
+This is where the join() method comes in. In earlier lectures, you learned that the join() method is used to return a new string of all of the array elements concatenated into a single string, with a specified separator between each element.
+
+Here is a refresher:
+
+Example Code
+const developers = ["Naomi", "Tom", "Jessica"];
+
+const teamList = developers.join("\n");
+console.log(teamList); 
+// Naomi
+// Tom
+// Jessica
+The separator in this case is the \n which represents the newline character.
+
+Chain the join() method with a \n for the separator to the map(). Now you should see a string in the console instead of the array of results.
+
+Step 10
+For the next part of the workshop, you will focus on displaying a list of book summaries to the console.
+
+Begin by logging the message "\nList of book summaries:\n" to the console. The newline character is added here because there should be a space before and after the message here.
